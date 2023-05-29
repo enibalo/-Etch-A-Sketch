@@ -1,0 +1,19 @@
+.container{
+    border: 1px solid grey;
+    display:flex;
+    flex-wrap:wrap;
+    width:500px;
+    height:500px;
+}
+
+body{
+    padding:64px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+button, input{
+    margin:6px;
+}
