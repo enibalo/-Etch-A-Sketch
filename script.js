@@ -41,3 +41,15 @@ eraser.addEventListener("click", function(){
         aBox.style.backgroundColor = "white";
     })
 })
+
+const penColor = document.querySelector(".pen-color");
+const palette = document.querySelector(".palette-color");
+
+penColor.addEventListener("click", function(){
+    let boxes = document.querySelectorAll(".box");
+    boxes.forEach(function(aBox){
+        aBox.addEventListener("mouseenter", function(){
+            aBox.style.backgroundColor = palette.value;
+            })
+    })
+})
