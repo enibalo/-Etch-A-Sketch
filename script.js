@@ -1,4 +1,4 @@
-
+//comment
 function createGrid(answer){
     let length = (500 - answer*2)/answer;
    
