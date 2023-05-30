@@ -25,7 +25,7 @@ createGrid(16);
 const penSize = document.querySelector(".pen");
 penSize.addEventListener("click", function(){
     let answer = Number(prompt("Pen Size (Max. = 100)"));
-    answer = (answer <=100)? answer:16;
+    answer = (answer <=100 && answer > 0)? answer:16;
     let boxes = document.querySelectorAll(".box");
     boxes.forEach(function(aBox){
         container.removeChild(aBox);
