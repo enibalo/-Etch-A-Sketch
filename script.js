@@ -53,3 +53,16 @@ penColor.addEventListener("click", function(){
             })
     })
 })
+
+
+const penRainbow = document.querySelector(".pen-rainbow");
+
+penRainbow.addEventListener("click", function(){
+    let boxes = document.querySelectorAll(".box");
+    boxes.forEach(function(aBox){
+        aBox.addEventListener("mouseenter", function(){
+        let value = ()=> Math.floor(Math.random() * 256);
+        aBox.style.backgroundColor = "rgb(" + value() + "," + value() + "," + value() + ")";
+        })
+    })
+})
