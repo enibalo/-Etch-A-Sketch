@@ -32,3 +32,12 @@ penSize.addEventListener("click", function(){
     })
     createGrid(answer);
 });
+
+
+const eraser = document.querySelector(".eraser");
+eraser.addEventListener("click", function(){
+    let boxes = document.querySelectorAll(".box");
+    boxes.forEach(function(aBox){
+        aBox.style.backgroundColor = "white";
+    })
+})
