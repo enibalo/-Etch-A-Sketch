@@ -1,10 +1,11 @@
 //comment
 function createGrid(answer){
-    let length = (500 - answer*2)/answer;
+    let length = (500)/answer;
    
     let totalBoxes = answer * answer;
     for (let i = 0; i < totalBoxes; i++){
         let box = document.createElement("div");
+        box.style.boxSizing = "border-box";
         box.style.width = length+"px";
         box.style.height = length+"px";
         box.style.border = "1px solid grey";
